@@ -10,7 +10,6 @@ class MovieRepository(private val movieDao: MovieDao) {
     suspend fun updateMovie(movie: Movie) = movieDao.update(movie)
     suspend fun deleteMovie(movie: Movie) = movieDao.delete(movie)
     suspend fun clearMovies() = movieDao.clear()
-    fun getMovie() = movieDao.getMovie()
     fun getAllMovies(): LiveData<List<Movie>> = movieDao.getAll()
 
 

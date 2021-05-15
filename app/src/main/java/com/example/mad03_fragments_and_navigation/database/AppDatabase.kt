@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.mad03_fragments_and_navigation.models.Movie
 
-@Database(entities = arrayOf(Movie::class), version = 1, exportSchema = false)
+@Database(entities = arrayOf(Movie::class), version = 2, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract val movieDao: MovieDao
 

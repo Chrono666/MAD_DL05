@@ -7,7 +7,7 @@ import com.example.mad03_fragments_and_navigation.models.Movie
 @Dao
 interface MovieDao {
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun createMovie(movie: Movie): Long
 
     @Update

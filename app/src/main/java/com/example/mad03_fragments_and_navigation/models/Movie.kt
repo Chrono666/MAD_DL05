@@ -8,7 +8,9 @@ import com.example.mad03_fragments_and_navigation.R
 
 @Entity(tableName = "movie_table")
 data class Movie(
+    @ColumnInfo(name = "title")
     var title: String = "",
+    @Ignore
     var description: String = ""
 ) {
     @PrimaryKey(autoGenerate = true)

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.DialogFragment
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
@@ -64,4 +65,5 @@ class MainActivity : AppCompatActivity() {
         Log.i("MainActivity", "I am in onRestart")
         super.onRestart()
     }
+
 }

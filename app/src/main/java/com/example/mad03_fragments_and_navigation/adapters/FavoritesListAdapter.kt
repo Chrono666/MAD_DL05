@@ -11,7 +11,7 @@ import com.example.mad03_fragments_and_navigation.models.Movie
 
 class FavoritesListAdapter(
     private var dataSet: List<Movie>,
-    val onDeleteClicked: (Long) -> Unit,
+    val onDeleteClicked: (Movie) -> Unit,
     val onEditClicked: (Movie) -> Unit
     ): RecyclerView.Adapter<FavoritesListAdapter.ViewHolder>() {
 
@@ -31,8 +31,8 @@ class FavoritesListAdapter(
         init {
             // Define click listener for the ViewHolder's View.
             binding.removeBtn.setOnClickListener {
-                binding.movie?.id?.let { itemId ->
-                    onDeleteClicked(itemId)
+                binding.movie?.let { movie ->
+                    onDeleteClicked(movie)
                 }
             }
 
