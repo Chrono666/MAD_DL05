@@ -12,7 +12,7 @@ data class Movie(
     var description: String = ""
 ) {
     @PrimaryKey(autoGenerate = true)
-    var id: Long? = 0L
+    var id: Long = 0L
 
     @Ignore
     var rating: Float = 0.0F

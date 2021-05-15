@@ -8,16 +8,19 @@ import com.example.mad03_fragments_and_navigation.models.Movie
 interface MovieDao {
 
     @Insert
-    fun createMovie(movie: Movie): Long
+    suspend fun createMovie(movie: Movie): Long
 
     @Update
-    fun update(movie: Movie)
+    suspend fun update(movie: Movie)
 
     @Delete
-    fun delete(movieId: Long)
+    suspend fun delete(movie: Movie)
 
     @Query("DELETE FROM movie_table")
-    fun clear()
+    suspend fun clear()
+
+    @Query("SELECT * FROM movie_table ORDER BY id DESC LIMIT 1")
+    fun getMovie(): Movie
 
     @Query("SELECT * FROM movie_table ORDER BY id DESC")
     fun getAll(): LiveData<List<Movie>>

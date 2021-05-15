@@ -6,6 +6,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     >
 
+    <data>
+        <variable
+            name="movieTrackerViewModel"
+            type="com.example.mad03_fragments_and_navigation.viewmodels.MovieFavoritesViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:background="@color/colorPrimaryDark"
