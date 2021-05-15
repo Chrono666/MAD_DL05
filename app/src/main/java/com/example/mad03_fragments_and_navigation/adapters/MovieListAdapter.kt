@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mad03_fragments_and_navigation.HomeFragmentDirections
 import com.example.mad03_fragments_and_navigation.R
 import com.example.mad03_fragments_and_navigation.databinding.MovieItemBinding
+import com.example.mad03_fragments_and_navigation.viewmodels.MovieFavoritesViewModel
 
 
 class MovieListAdapter:

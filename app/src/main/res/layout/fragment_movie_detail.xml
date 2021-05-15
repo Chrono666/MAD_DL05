@@ -9,9 +9,12 @@
     <variable
         name="movie"
         type="com.example.mad03_fragments_and_navigation.models.Movie" />
+    <variable
+        name="movieTrackerViewModel"
+        type="com.example.mad03_fragments_and_navigation.viewmodels.MovieFavoritesViewModel" />
 </data>
 
-<androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"

@@ -32,4 +32,10 @@
     <string name="clear">Clear</string>
     <string name="remove">Remove</string>
     <string name="edit">Edit</string>
+    <string name="error_timeout_title">a</string>
+    <string name="error_timeout_body">body</string>
+    <string name="enter_note">Enter note:</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="enter_your_text_here">enter your text here</string>
 </resources>
